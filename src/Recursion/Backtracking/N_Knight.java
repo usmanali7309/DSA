@@ -49,6 +49,7 @@ static void knight2(boolean[][] board,int row,int col,int knight){
             board[row][col]=false;
         }
 
+
        knight2(board,row,col+1,knight);
 
 }
