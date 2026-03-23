@@ -9,11 +9,16 @@ public class LLMain {
         list.insertFirst(8);
         list.insertLast(99);
         list.insert(44,3);
+
 //        list.display();
 //        System.out.println(list.deleteFirst());
+
+//        list.display();
+//        System.out.println(list.deleteLast());
         list.display();
-        System.out.println(list.deleteLast());
+        System.out.println(list.delete(2));
         list.display();
+        System.out.println(list.find(8));
 
     }
 }

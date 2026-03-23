@@ -71,6 +71,31 @@ public class LinkedList {
         return val;
     }
 
+    public int delete(int index){
+        if(index == 0){
+            return deleteFirst();
+        }
+        if(index == size-1){
+            return deleteLast();
+        }
+        Node prev = get(index-1);
+        int val = prev.next.value;
+        prev.next = prev.next.next;
+        return val;
+    }
+
+    public Node find(int val){
+        Node node = head;
+        while (node != null){
+            if(node.value == val){
+                return node;
+            }
+            node = node.next;
+        }
+
+        return null;
+    }
+
 
     public Node get(int index){
         Node node = head;
@@ -89,7 +114,6 @@ public class LinkedList {
         }
         System.out.print("End");
     }
-
 
 
 
