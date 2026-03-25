@@ -10,6 +10,7 @@ public class DLLMain {
         list.insertFirst(8);
         list.insertLast(77);
         list.insert(33,2);
+        list.insertAfter(3,88);
         list.display();
     }
 }
